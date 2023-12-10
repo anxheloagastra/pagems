@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+ {% for product in products %}
+      <div class="row">
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4Apm96qkGwAIB0gIkNzg5ZTkxM2ItOWRlYi00MzIzLWI4OTUtZWViMWI3NTAzZTA32AIG4AIB&sid=628f16f7bc3135ba02bf7cb19e182ae9&dest_id=10744938;dest_type=hotel;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698340532;srpvid=53ad79554a09007b;type=total;ucfs=1&"><img src="{{ product.image.url }}" alt=""></a>
+            <span class="category">{{ product.name }}</span>
+            <h6>${{ product.price }}</h6>
+            <h4><a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4Apm96qkGwAIB0gIkNzg5ZTkxM2ItOWRlYi00MzIzLWI4OTUtZWViMWI3NTAzZTA32AIG4AIB&sid=628f16f7bc3135ba02bf7cb19e182ae9&dest_id=10744938;dest_type=hotel;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698340532;srpvid=53ad79554a09007b;type=total;ucfs=1&">24 m²</a></h4>
+            <ul>
+              <li>{{ product.description }}</li>
+            </ul>
+            <div class="main-button">
+              <a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4Apm96qkGwAIB0gIkNzg5ZTkxM2ItOWRlYi00MzIzLWI4OTUtZWViMWI3NTAzZTA32AIG4AIB&sid=628f16f7bc3135ba02bf7cb19e182ae9&dest_id=10744938;dest_type=hotel;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698340532;srpvid=53ad79554a09007b;type=total;ucfs=1&">Reserve Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4Apm96qkGwAIB0gIkNzg5ZTkxM2ItOWRlYi00MzIzLWI4OTUtZWViMWI3NTAzZTA32AIG4AIB&sid=628f16f7bc3135ba02bf7cb19e182ae9&dest_id=10744938;dest_type=hotel;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698340532;srpvid=53ad79554a09007b;type=total;ucfs=1&"><img src="{% static 'assets/images/property-02.jpg' %}" alt=""></a>
+            <span class="category">Deluxe Double Room with Castle View</span>
+            <h6>$59</h6>
+            <h4><a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4Apm96qkGwAIB0gIkNzg5ZTkxM2ItOWRlYi00MzIzLWI4OTUtZWViMWI3NTAzZTA32AIG4AIB&sid=628f16f7bc3135ba02bf7cb19e182ae9&dest_id=10744938;dest_type=hotel;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698340532;srpvid=53ad79554a09007b;type=total;ucfs=1&">29 m²</a></h4>
+            <ul>
+              <li>The spacious double room provides air conditioning, a wardrobe, a terrace with garden views as well as a shared bathroom featuring a bath. The unit offers 1 bed.</li>
+            </ul>
+            <div class="main-button">
+              <a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4Apm96qkGwAIB0gIkNzg5ZTkxM2ItOWRlYi00MzIzLWI4OTUtZWViMWI3NTAzZTA32AIG4AIB&sid=628f16f7bc3135ba02bf7cb19e182ae9&dest_id=10744938;dest_type=hotel;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698340532;srpvid=53ad79554a09007b;type=total;ucfs=1&">Reserve Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4Apm96qkGwAIB0gIkNzg5ZTkxM2ItOWRlYi00MzIzLWI4OTUtZWViMWI3NTAzZTA32AIG4AIB&sid=628f16f7bc3135ba02bf7cb19e182ae9&dest_id=10744938;dest_type=hotel;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698340532;srpvid=53ad79554a09007b;type=total;ucfs=1&"><img src="{% static 'assets/images/property-03.jpg' %}" alt=""></a>
+            <span class="category">Double Room with Balcony</span>
+            <h6>$59</h6>
+            <h4><a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4Apm96qkGwAIB0gIkNzg5ZTkxM2ItOWRlYi00MzIzLWI4OTUtZWViMWI3NTAzZTA32AIG4AIB&sid=628f16f7bc3135ba02bf7cb19e182ae9&dest_id=10744938;dest_type=hotel;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698340532;srpvid=53ad79554a09007b;type=total;ucfs=1&"> 25 m²</a></h4>
+            <ul>
+              <li>Offering free toiletries, this double room includes a shared bathroom with a bath, a shower and a bidet.</li>
+              <li>The double room has air conditioning, a wardrobe as well as a balcony with city views. The unit has 1 bed.</li>
+            </ul>
+            <div class="main-button">
+              <a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4Apm96qkGwAIB0gIkNzg5ZTkxM2ItOWRlYi00MzIzLWI4OTUtZWViMWI3NTAzZTA32AIG4AIB&sid=628f16f7bc3135ba02bf7cb19e182ae9&dest_id=10744938;dest_type=hotel;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698340532;srpvid=53ad79554a09007b;type=total;ucfs=1&">Reserve Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4ArWT8KkGwAIB0gIkNDUzZWEwZjQtOGZiMC00ZGFlLWE2NmItOTBiZGUwN2E2NWZk2AIG4AIB&sid=92173403542aa1f793225eada20e82e8&dest_id=-105953;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698433477;srpvid=fac1861d8ec6030c;type=total;ucfs=1&#hotelTmpl"><img src="{% static 'assets/images/property-04.jpg' %}" alt=""></a>
+            <span class="category">Double Room with Terrace</span>
+            <h6>$49</h6>
+            <h4><a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4ArWT8KkGwAIB0gIkNDUzZWEwZjQtOGZiMC00ZGFlLWE2NmItOTBiZGUwN2E2NWZk2AIG4AIB&sid=92173403542aa1f793225eada20e82e8&dest_id=-105953;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698433477;srpvid=fac1861d8ec6030c;type=total;ucfs=1&#hotelTmpl">25 m²</a></h4>
+            <ul>
+              <li>The double room features air conditioning, a wardrobe, a terrace with garden views as well as a shared bathroom boasting a bath.  </li>
+              <li>The unit has 1 bed.</li>
+            </ul>
+            <div class="main-button">
+              <a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4ArWT8KkGwAIB0gIkNDUzZWEwZjQtOGZiMC00ZGFlLWE2NmItOTBiZGUwN2E2NWZk2AIG4AIB&sid=92173403542aa1f793225eada20e82e8&dest_id=-105953;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698433477;srpvid=fac1861d8ec6030c;type=total;ucfs=1&#hotelTmpl">Reserve Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4ArWT8KkGwAIB0gIkNDUzZWEwZjQtOGZiMC00ZGFlLWE2NmItOTBiZGUwN2E2NWZk2AIG4AIB&sid=92173403542aa1f793225eada20e82e8&dest_id=-105953;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698433477;srpvid=fac1861d8ec6030c;type=total;ucfs=1&#hotelTmpl"><img src="{% static 'assets/images/property-05.jpg' %}" alt=""></a>
+            <span class="category">COMIN SOON</span>
+            <h6>$</h6>
+            <h4><a href="#https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4ArWT8KkGwAIB0gIkNDUzZWEwZjQtOGZiMC00ZGFlLWE2NmItOTBiZGUwN2E2NWZk2AIG4AIB&sid=92173403542aa1f793225eada20e82e8&dest_id=-105953;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698433477;srpvid=fac1861d8ec6030c;type=total;ucfs=1&#hotelTmpl">25 m²</a></h4>
+            <ul>
+              <li>COMING SOON </li>
+              <li>COMING SOON</li>
+            </ul>
+            <div class="main-button">
+              <a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4ArWT8KkGwAIB0gIkNDUzZWEwZjQtOGZiMC00ZGFlLWE2NmItOTBiZGUwN2E2NWZk2AIG4AIB&sid=92173403542aa1f793225eada20e82e8&dest_id=-105953;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698433477;srpvid=fac1861d8ec6030c;type=total;ucfs=1&#hotelTmpl">Reserve Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="item">
+            <a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4ArWT8KkGwAIB0gIkNDUzZWEwZjQtOGZiMC00ZGFlLWE2NmItOTBiZGUwN2E2NWZk2AIG4AIB&sid=92173403542aa1f793225eada20e82e8&dest_id=-105953;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698433477;srpvid=fac1861d8ec6030c;type=total;ucfs=1&#hotelTmpl"><img src="{% static 'assets/images/property-06.jpg' %}" alt=""></a>
+            <span class="category">COMING SOON</span>
+            <h6>$</h6>
+            <h4><a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4ArWT8KkGwAIB0gIkNDUzZWEwZjQtOGZiMC00ZGFlLWE2NmItOTBiZGUwN2E2NWZk2AIG4AIB&sid=92173403542aa1f793225eada20e82e8&dest_id=-105953;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698433477;srpvid=fac1861d8ec6030c;type=total;ucfs=1&#hotelTmpl"></a>25 m²</h4>
+            <ul>
+              <li>COMING SOON</li>
+              <li>COMING SOON</li>
+            </ul>
+            <div class="main-button">
+              <a href="https://www.booking.com/hotel/al/villa-duka-kreis-kruja.en-gb.html?aid=304142&label=gen173nr-1FCAEoggI46AdIM1gEaAaIAQGYAQm4AQfIAQzYAQHoAQH4AQyIAgGoAgO4ArWT8KkGwAIB0gIkNDUzZWEwZjQtOGZiMC00ZGFlLWE2NmItOTBiZGUwN2E2NWZk2AIG4AIB&sid=92173403542aa1f793225eada20e82e8&dest_id=-105953;dest_type=city;dist=0;group_adults=1;group_children=0;hapos=1;hpos=1;no_rooms=1;req_adults=1;req_children=0;room1=A;sb_price_type=total;sr_order=popularity;srepoch=1698433477;srpvid=fac1861d8ec6030c;type=total;ucfs=1&#hotelTmpl">Reserve Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
