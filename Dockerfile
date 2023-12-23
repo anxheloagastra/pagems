@@ -7,13 +7,13 @@ ENV PYTHONUNBUFFERED 1
 # Set the working directory in the container
 WORKDIR /app
 
-# Copy the requirements.txt file into the container at /app
+# Copy only the necessary files for dependency installation
 COPY requirements.txt /app/
 
 # Install any dependencies specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the current directory contents into the container at /app
+# Copy the rest of the application code to the working directory
 COPY . /app/
 
 # Expose the port your app will run on (assuming your Django app runs on port 8000 by default)
